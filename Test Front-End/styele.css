@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600;900&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+body {
+    margin: 0;
+    margin: 0;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+}
+/* header */
+.site-header {
+  width: 100%; 
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 27px 23px 27px;
+  font-family: 'Nunito', sans-serif;
+}
+.menu {
+  width: 30.9px;
+  height: 20.8px;
+}
+#cuenta {
+  display: none;
+}
+.search {
+  height: 30px;
+  border-bottom: 1px solid;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#search_destock {
+  display: none;
+}
+.search-input {
+  border: none;
+}
+.img-logo {
+  height: 90px;
+}
+#contador {
+  width: 15px;
+  height: 15px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: red;
+  text-align: center;
+  color: white;
+  font-size: 10px;
+}
+#contador-numero {
+  margin: 0;
+}
+.carrito {  
+  display: flex;
+}
+
+/* main */
+main {
+  width: 100%;
+  margin-top: 20px;
+  font-family: 'Nunito', sans-serif;
+}
+.container h1 {
+  color: #7A7A7A;
+  margin-top: -40px;
+  font-weight: bolder
+
+}
+.container-slider {
+  padding: 0 20px;
+}
+.img-banner  {
+  display: block;
+  width: 100%;
+ }
+.slider__img  {
+  display: block;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+ }
+.slider__section {
+  margin: 50px 0;
+  display: inline-block;
+  overflow: hidden;
+}
+.container-slider{
+  margin: 50px 0;
+  position: relative;
+  overflow: hidden;
+}
+.product {
+  
+  text-align: center;
+  position: relative;
+  font-size: 10px;
+  line-height: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+ 
+.product__description {
+  text-decoration:line-through;
+  color: #7A7A7A;
+  margin-top: 10px;
+}
+.product__title {
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+  
+}
+.product__full {
+  margin-top: 15px;
+  text-decoration: line-through;
+}
+.size {
+  width: 11px;
+}
+.star-flex {
+  display: flex;
+  margin-left: 80px;
+  margin-top: -7px;
+}
+#button_comprar {
+  width: 125px;
+  height: 32px;
+  margin-top: 10px;
+  margin-left: 50px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+.carru {
+  display: flex;
+    text-align: center;
+    justify-content: center;   
+}
+.form-container {
+  background-color: #F2F2F2;
+  text-align: center;
+  padding: 16px 0 14px 0;  
+} 
+.cliente-formulario{
+  display: inline-block;
+  justify-content: center;
+}
+.input-contenedor{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 0 4px;
+}
+.cliente-formulario span {
+  color: #F8475F;
+  height: 24px;
+}
+.formulario-input {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  opacity: 1;
+  border-color: transparent;
+  width: 280px;
+  height: 48px;
+}
+.formulario-button {
+  width: 280px;
+  height: 48px;
+  background: #000000 0% 0% no-repeat padding-box;
+  opacity: 1;
+  color: white;
+  margin: 0 4px;
+  border-radius: 5px;
+  border: black;
+}
+.product {
+  width: 216px;
+  height: 353px;
+  position: relative;
+
+} 
+.formulario {
+  margin-top: 20px;
+}
+/* foothe */
+
+.site-footer {
+  
+  background-color: black;
+  justify-content: space-evenly;
+  align-items: center;
+  display: inline-block;
+  width: 361px;
+  height: 355px;
+ 
+}
+.location{
+  color: white;
+  width: 238px;
+  height: 160px;
+  font-size: 10px;
+  font-family: 'Nunito', sans-serif;
+  margin-left: 27px;
+  margin-top: 23px;
+}
+.location_data {
+  margin-top: -30px;
+  line-height: 8px;
+    font-size: 13px;
+}
+.speaks {
+  background-color: white;
+  display: flex;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-size: 12px;
+  width: 229px;
+  height: 38px;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
+.speaks p {
+  margin-top: 15px;
+}
+.contact_us {
+  background-color: white;
+  display: flex;
+  border-radius: 5px;
+  font-size: 12px;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  width: 229px;
+  height: 38px;
+  font-family: 'Nunito', sans-serif;
+}
+.contact_us p {
+  margin-top: 19px;
+}
+.logo {
+  display: flex;
+  margin-left: 100px;
+  margin-top: 18px;
+}
+.corebiz {
+  color: white;
+  margin-top: -5px;
+}
+.p_corebiz {
+  font-weight: bolder;
+  margin-top: 10px;
+  margin-top: -20px;
+  font-size: 25px;
+}
+.vtex {
+  color: white;
+  margin-left: 10px;
+  display: block; 
+}
+.vtex_logo {
+  display: flex;
+  margin-top: -17px;
+  font-weight: bolder
+}
+.p_initial {
+  font-size: 8px;
+ 
+}
+.vtex_logo img {
+  margin-top: -10px;
+}
+.red_descuento {
+   background: linear-gradient(to bottom left, #F8475F 50%, transparent 50%);
+   height: 72px;
+   width: 80px;
+   position: absolute;
+   right: 0px;
+   color: white;
+   font-size: 20px;
+}
+.product_descuento {
+  margin-top: 20.25px;
+  margin-left: 28px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 900;
+}
+.contact {
+  margin-left: 70px;
+}
+
+
+
+@media (min-width: 700px) { 
+  .menu {
+    display: none;
+  }
+  #cuenta {
+    justify-content: space-evenly;
+    margin-right: 20px;
+    display: flex;
+    width: 200px;
+    align-items: center;
+}
+  #search_destock {
+    margin: 0px 21px;
+    display: flex;
+  }
+  #search_mobile {
+    display: none;
+  }
+  
+.site-header {
+  
+  padding: 0 27px 0 27px;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.cliente-formulario{
+  display: flex;
+  justify-content: center;
+}
+.formulario-button {
+  width: 140px;
+  height: 48px;
+  border-radius: none;
+}
+.site-footer {
+  display: flex;
+  background-color: black;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 213px;
+  width: 100%;
+}
+.location {
+  margin-left: none;
+  margin-top: none;
+}
+.contact {
+  margin-left: none;
+}
+.logo {
+  margin-left: none;
+  margin-top: none;
+}
+}
+
+
+
+

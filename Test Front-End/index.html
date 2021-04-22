@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deasarrollo de Pagiba web</title>
+    <link rel="stylesheet" href="styele.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    
+ </head>
+ <body>
+    <header class="site-header">
+        <img src="./img/menu.svg" alt="" class="menu">
+            <div >
+                <img src="./img/logo.png" alt="" class="img-logo">
+            </div>
+            <div class="search" id="search_destock">
+                <input type="buscar" class="search-input" placeholder="¿Que estas buscando?" ><i class="fas fa-search"></i> 
+            </div>
+                 <a href="" id="cuenta"><span class="fas fa-user"></span>mi cuenta</a>
+            <div class="carrito">
+                 <a href=""><span class="fas fa-cart-plus"></a>
+               <div id="contador">
+                    <p id="contador-numero">0</p>
+                </div>
+            </div> 
+            <div class="search" id="search_mobile">
+                <input type="buscar" class="search-input" placeholder="¿Que estas buscando?" ><i class="fas fa-search"></i> 
+            </div>
+            <!-- <a href="" id="cuenta"><span class="fas fa-user"></span>mi cuenta</a> -->
+            <!-- <div class="carrito">
+
+                <a href=""><span class="fas fa-cart-plus"></a>
+                <div id="contador">
+                   <p id="contador-numero">0</p>
+                </div>
+                
+           </div> -->
+    </header>
+        <div>
+             <img src="./img/banner.png" alt="" class="img-banner">
+        </div>
+        <main class="main">
+            <div class="container">
+              <h2 class="main_title">Mas vendidos</h2>
+              <h1>___</h1>
+                <section class="container-products">
+                  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="carru">
+                           <div class="product">
+                             <img src="https://corebiz-test.herokuapp.com/images/product-1.png" class="articulo-img" alt="...">
+                             <p class="product__descrition">SAPATO FLOATER PRETO</p>
+                             <div class="star-flex">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_vacia.svg" alt="" class="size">
+                                <img src="./img/estrella_vacia.svg" alt="" class="size">
+                                <img src="./img/estrella_vacia.svg" alt="" class="size">
+                                <img src="./img/estrella_vacia.svg" alt="" class="size">
+                            </div> 
+                             <p class="product__full">de $ 400.00</p>
+                             <p class="product__title">por $ 290.90</p>
+                             <button id="button_comprar" onclick="agregar()">COMPRAR</button>
+                           </div>
+                           <div class="product">
+                            <div class="red_descuento">
+                              <p class="product_descuento">OFF</p>
+                            </div>
+                            <img src="https://corebiz-test.herokuapp.com/images/product-2.png" class="articulo-img" alt="">
+                            <p class="product__descrition">SANDÁLIA LINHO BROWN</p>
+                            <div class="star-flex">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_vacia.svg" alt="" class="size">
+                            </div> 
+                            <p class="product__full">de $ 299.00</p>
+                            <p class="product__title">por $ 199.00</p> 
+                            <button id="button_comprar" onclick="agregar()">COMPRAR</button>
+                           </div>
+                           <div class="product">
+                             <div class="red_descuento">
+                                   <p class="product_descuento">OFF</p>
+                             </div>
+                            <img src="https://corebiz-test.herokuapp.com/images/product-3.png" class="articulo-img" alt="">
+                            <p class="product__descrition">BOTA MUSTANG PRETO</p>
+                            <div class="star-flex">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_vacia.svg" alt="" class="size">
+                                <img src="./img/estrella_vacia.svg" alt="" class="size">
+                                <img src="./img/estrella_vacia.svg" alt="" class="size">
+                            </div> 
+                            <p class="product__full">de $ 329.00</p>
+                            <p class="product__title">por $ 299.90</p>
+                            <button id="button_comprar" onclick="agregar()">COMPRAR</button>
+                           </div>
+                           <div class="product">
+                            <img src="https://corebiz-test.herokuapp.com/images/product-4.png" class="articulo-img" alt="">
+                            <p class="product__descrition">CINTO SEMICROMO PRETO 40MM</p>
+                            <div class="star-flex">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_vacia.svg" alt="" class="size">
+                                <img src="./img/estrella_vacia.svg" alt="" class="size">
+                            </div> 
+                            <p class="product__full">de $ 400.00</p>
+                            <p class="product__title">por $ 79.90</p>
+                            <button id="button_comprar" onclick="agregar()">COMPRAR</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="carru">
+                          <div class="product">
+                            <img src="https://corebiz-test.herokuapp.com/images/product-5.png" class="articulo-img" alt="">
+                            <p class="product__descrition">MEIA SPORTWEAR PRETA</p>
+                            <div class="star-flex">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                            </div> 
+                            <p class="product__full">de $ 350.00</p>
+                            <p class="product__title">por $ 140.00</p>
+                            <button id="button_comprar" onclick="agregar()">COMPRAR</button>
+                          </div>
+                          <div class="product">
+                            <img src="https://corebiz-test.herokuapp.com/images/product-1.png" class="articulo-img" alt="...">
+                            <p class="product__descrition">SAPATO FLOATER PRETO</p>
+                            <div class="star-flex">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_vacia.svg" alt="" class="size">
+                                <img src="./img/estrella_vacia.svg" alt="" class="size">
+                                <img src="./img/estrella_vacia.svg" alt="" class="size">
+                                <img src="./img/estrella_vacia.svg" alt="" class="size">
+                            </div> 
+                            <p class="product__full">de $ 400.00</p>
+                            <p class="product__title">por $ 290.90</p>
+                            <button id="button_comprar" onclick="agregar()">COMPRAR</button>
+                          </div>
+                          <div class="product">
+                            <div class="red_descuento">
+                              <p class="product_descuento">OFF</p>
+                            </div>
+                            <img src="https://corebiz-test.herokuapp.com/images/product-2.png" class="articulo-img" alt="">
+                            <p class="product__descrition">SANDÁLIA LINHO BROWN</p>
+                            <div class="star-flex">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_vacia.svg" alt="" class="size">
+                            </div> 
+                            <p class="product__full">de $ 299.00</p>
+                            <p class="product__title">por $ 199.00</p> 
+                            <button id="button_comprar" onclick="agregar()">COMPRAR</button>
+                           </div>
+                           <div class="product">
+                            <div class="red_descuento">
+                              <p class="product_descuento">OFF</p>
+                             </div>
+                            <img src="https://corebiz-test.herokuapp.com/images/product-3.png" class="articulo-img" alt="">
+                            <p class="product__descrition">BOTA MUSTANG PRETO</p>
+                            <div class="star-flex">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_vacia.svg" alt="" class="size">
+                                <img src="./img/estrella_vacia.svg" alt="" class="size">
+                                <img src="./img/estrella_vacia.svg" alt="" class="size">
+                            </div> 
+                            <p class="product__full">de $ 329.00</p>
+                            <p class="product__title">por $ 299.90</p>
+                            <button id="button_comprar" onclick="agregar()">COMPRAR</button>
+                           </div>
+                       </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="carru">
+                          <div class="product">
+                            <img src="https://corebiz-test.herokuapp.com/images/product-4.png" class="articulo-img" alt="">
+                            <p class="product__descrition">CINTO SEMICROMO PRETO 40MM</p>
+                            <div class="star-flex">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_vacia.svg" alt="" class="size">
+                                <img src="./img/estrella_vacia.svg" alt="" class="size">
+                            </div> 
+                            <p class="product__full">de $ 400.00</p>
+                            <p class="product__title">por $ 79.90</p>
+                            <button id="button_comprar" onclick="agregar()">COMPRAR</button>
+                          </div>
+                          <div class="product">
+                            <img src="https://corebiz-test.herokuapp.com/images/product-5.png" class="articulo-img" alt="">
+                            <p class="product__descrition">MEIA SPORTWEAR PRETA</p>
+                            <div class="star-flex">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                            </div> 
+                            <p class="product__full">de $ 350.00</p>
+                            <p class="product__title">por $ 140.00</p>
+                            <button id="button_comprar" onclick="agregar()">COMPRAR</button>
+                          </div>
+                          <div class="product">
+                            <img src="https://corebiz-test.herokuapp.com/images/product-1.png" class="articulo-img" alt="...">
+                            <p class="product__descrition">SAPATO FLOATER PRETO</p>
+                            <div class="star-flex">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_vacia.svg" alt="" class="size">
+                                <img src="./img/estrella_vacia.svg" alt="" class="size">
+                                <img src="./img/estrella_vacia.svg" alt="" class="size">
+                                <img src="./img/estrella_vacia.svg" alt="" class="size">
+                            </div> 
+                            <p class="product__full">de $ 400.00</p>
+                            <p class="product__title">por $ 290.90</p>
+                            <button id="button_comprar" onclick="agregar()">COMPRAR</button>
+                          </div>
+                          <div class="product">
+                            <div class="red_descuento">
+                              <p class="product_descuento">OFF</p>
+                            </div>
+                            <img src="https://corebiz-test.herokuapp.com/images/product-2.png" class="articulo-img" alt="">
+                            <p class="product__descrition">SANDÁLIA LINHO BROWN</p>
+                            <div class="star-flex">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_vacia.svg" alt="" class="size">
+                            </div> 
+                            <p class="product__full">de $ 299.00</p>
+                            <p class="product__title">por $ 199.00</p> 
+                            <button id="button_comprar" onclick="agregar()">COMPRAR</button>
+                           </div>
+                       </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="carru">
+                          <div class="product">
+                            <div class="red_descuento">
+                              <p class="product_descuento">OFF</p>
+                             </div>
+                            <img src="https://corebiz-test.herokuapp.com/images/product-3.png" class="articulo-img" alt="">
+                            <p class="product__descrition">BOTA MUSTANG PRETO</p>
+                            <div class="star-flex">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_vacia.svg" alt="" class="size">
+                                <img src="./img/estrella_vacia.svg" alt="" class="size">
+                                <img src="./img/estrella_vacia.svg" alt="" class="size">
+                            </div> 
+                            <p class="product__full">de $ 329.00</p>
+                            <p class="product__title">por $ 299.90</p>
+                            <button id="button_comprar" onclick="agregar()">COMPRAR</button>
+                           </div>
+                          <div class="product">
+                            <img src="https://corebiz-test.herokuapp.com/images/product-4.png" class="articulo-img" alt="">
+                            <p class="product__descrition">CINTO SEMICROMO PRETO 40MM</p>
+                            <div class="star-flex">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_vacia.svg" alt="" class="size">
+                                <img src="./img/estrella_vacia.svg" alt="" class="size">
+                            </div> 
+                            <p class="product__full">de $ 400.00</p>
+                            <p class="product__title">por $ 79.90</p>
+                            <button id="button_comprar" onclick="agregar()">COMPRAR</button>
+                          </div>
+                          <div class="product">
+                            <img src="https://corebiz-test.herokuapp.com/images/product-5.png" class="articulo-img" alt="">
+                            <p class="product__descrition">MEIA SPORTWEAR PRETA</p>
+                            <div class="star-flex">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                            </div> 
+                            <p class="product__full">de $ 350.00</p>
+                            <p class="product__title">por $ 140.00</p>
+                            <button id="button_comprar" onclick="agregar()">COMPRAR</button>
+                          </div>
+                          <div class="product">
+                            <img src="https://corebiz-test.herokuapp.com/images/product-1.png" class="articulo-img" alt="...">
+                            <p class="product__descrition">SAPATO FLOATER PRETO</p>
+                            <div class="star-flex">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_vacia.svg" alt="" class="size">
+                                <img src="./img/estrella_vacia.svg" alt="" class="size">
+                                <img src="./img/estrella_vacia.svg" alt="" class="size">
+                                <img src="./img/estrella_vacia.svg" alt="" class="size">
+                            </div> 
+                            <p class="product__full">de $ 400.00</p>
+                            <p class="product__title">por $ 290.90</p>
+                            <button id="button_comprar" onclick="agregar()">COMPRAR</button>
+                          </div>
+                       </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="carru">
+                          <div class="product"> 
+                            <div class="red_descuento">
+                              <p class="product_descuento">OFF</p>
+                             </div>
+                            <img src="https://corebiz-test.herokuapp.com/images/product-2.png" class="articulo-img" alt="">
+                            <p class="product__descrition">SANDÁLIA LINHO BROWN</p>
+                            <div class="star-flex">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_vacia.svg" alt="" class="size">
+                            </div> 
+                            <p class="product__full">de $ 299.00</p>
+                            <p class="product__title">por $ 199.00</p> 
+                            <button id="button_comprar" onclick="agregar()">COMPRAR</button>
+                           </div>
+                          <div class="product">
+                            <div class="red_descuento">
+                              <p class="product_descuento">OFF</p>
+                            </div>
+                            <img src="https://corebiz-test.herokuapp.com/images/product-3.png" class="articulo-img" alt="">
+                            <p class="product__descrition">BOTA MUSTANG PRETO</p>
+                            <div class="star-flex">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_vacia.svg" alt="" class="size">
+                                <img src="./img/estrella_vacia.svg" alt="" class="size">
+                                <img src="./img/estrella_vacia.svg" alt="" class="size">
+                            </div> 
+                            <p class="product__full">de $ 329.00</p>
+                            <p class="product__title">por $ 299.90</p>
+                            <button id="button_comprar" onclick="agregar()">COMPRAR</button>
+                          </div>
+                          <div class="product">
+                            <img src="https://corebiz-test.herokuapp.com/images/product-4.png" alt="" class="articulo-img">
+                            <p class="product__descrition">CINTO SEMICROMO PRETO 40MM</p>
+                            <div class="star-flex">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_vacia.svg" alt="" class="size">
+                                <img src="./img/estrella_vacia.svg" alt="" class="size">
+                            </div> 
+                            <p class="product__full">de $ 400.00</p>
+                            <p class="product__title">por $ 79.90</p>
+                            <button id="button_comprar" onclick="agregar()">COMPRAR</button>
+                          </div>
+                          <div class="product">
+                            <img src="https://corebiz-test.herokuapp.com/images/product-5.png" alt="" class="articulo-img">
+                            <p class="product__descrition">MEIA SPORTWEAR PRETA</p>
+                            <div class="star-flex">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                                <img src="./img/estrella_rellena.svg" alt="" class="size">
+                            </div> 
+                            <p class="product__full">de $ 350.00</p>
+                            <p class="product__title">por $ 140.00</p>
+                            <button id="button_comprar" onclick="agregar()">COMPRAR</button>
+                          </div>
+                       </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+                </section>
+       </div> 
+       <div class="formulario">
+        <div class="form-container">
+            <p>¡Únete a nuestras novedades y promociones!</p>
+              <form class="cliente-formulario" id="formulario" novalidate>
+                  <div class="input-contenedor">
+                      <input class="formulario-input" id="nombre" required type="text" placeholder="Ingresa tu nombre">
+                      <span id="nombre-invalido"></span>
+                  </div>
+                  <div class="input-contenedor">
+                      <input class="formulario-input" id="correo" required type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Ingresa tu mail">
+                      <span id="correo-invalido"></span>
+                  </div>
+                  <button class="formulario-button" type="submit" onclick="validationForm(event)">Suscribirse</button>
+              </form>
+        </div>
+    </div>
+       </main>  
+     <footer class="site-footer">
+         <div class="location">
+                 <h2>Ubicacion</h2>
+                 <div class="location_data" >
+                    <h1>___</h1>
+                    <p>Avenida Andromeda,200. Bloco 6 e 8</p>
+                    <p>alphavile</p>
+                    <p>brasil@corebiz.ag</p>
+                    <p>+55 11 3090 1039</p>
+                 </div> 
+            </div>
+               <div class="contact">
+                <div class="contact_us">
+                   <img src="./img/mensaje.svg" alt="">
+                   <p>CONTACTANOS</p>
+                </div>
+                <div class="speaks">
+                   <img src="./img/llamada.svg" alt="">
+                   <p>HABLA CON UN CONSULTOR</p>
+                </div>
+             </div>
+             <div class="logo">
+                <div class="corebiz">
+                    <p class="p_initial">Desarrrollado por </p>
+                    <p class="p_corebiz">corebiz</p>
+                </div>
+                <div class="vtex">
+                       <p class="p_initial">Pawered by</p>
+                    <div class="vtex_logo">
+                        <img src="./img/vtex.svg" alt="">
+                        <p>VTEX</p>
+                    </div>
+                </div>
+           </div>      
+      </footer>  
+    <script src="app.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>     
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+ </body>
+</html>
